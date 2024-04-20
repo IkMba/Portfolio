@@ -1,0 +1,83 @@
+@import "../../app.scss";
+
+.skills {
+  position: relative;
+  padding-inline: 8rem;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  height: 100%;
+  // padding-top: 5rem;
+
+  @include mobile {
+    padding-inline: 3rem;
+  }
+
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 35px;
+    text-align: center;
+    color: orange;
+    font-size: 22px;
+
+    @include mobile {
+      // padding-top: calc(100vh - 100px);
+      font-size: 24px;
+    }
+
+    .progressBar {
+      width: 100px;
+      height: 5px;
+      margin: auto;
+      background-color: white;
+    }
+  }
+
+  .dev {
+    margin-top: 2rem;
+    // padding-inline: 4rem;
+    max-width: 650px;
+    margin: auto;
+
+    .bigSkills,
+    .smSkills {
+      display: flex;
+      gap: 10px;
+      color: white;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .bigSkill {
+      padding: 25px 15px;
+      // background-color: #d3d3d3;
+      border: 2px solid #d3d3d3;
+      // border-radius: 50%;
+
+      @include mobile {
+        padding: 10px 10px;
+      }
+    }
+    .smSkill {
+      padding: 8px 5px;
+      // background-color: #d3d3d3;
+      border: 2px solid #d3d3d3;
+      // border-radius: 50%;
+      width: 75px;
+      text-align: center;
+      font-size: 11px;
+
+      @include mobile {
+        // padding: 10px 10px;
+        // width: auto;
+      }
+    }
+    .bigSkill:hover,
+    .smSkill:hover {
+      background-color: orange;
+      border: none;
+      transition: all 2s ease;
+    }
+  }
+}
