@@ -7,8 +7,8 @@ const projectData = [
     title: "Dashboard",
     details:
       "A dashboard application for an online ecommerce company. The dashboard displays products,users and transction data from a database. Admin can also perform CRUD operations on these properties.",
-    link: "",
-    img: "/glow1.png",
+    link: "https://dashboard-theta-umber.vercel.app/dashboard",
+    img: "/image.png",
     tools: [
       "React",
       "TypeScript",
@@ -22,7 +22,7 @@ const projectData = [
     title: "Resort Bookings App",
     details:
       "A custom application for managing a hotel resort. Used to manage bookings,cabins and guests data. ",
-    link: "https://movieswebflix.netlify.app/",
+    link: "https://luxresorts.netlify.app/",
     img: "/movies1.png",
     tools: [
       "JavaScript",
@@ -46,7 +46,7 @@ const projectData = [
     details: "A pizza ordering application",
     img: "/pizza1.png",
     tools: ["React", "React Router", "Redux", "JavaScript"],
-    link: "reactpizzaapp.netlfy.app",
+    link: "https://pizzanow-omega.vercel.app/",
   },
   {
     title: "Adex",
