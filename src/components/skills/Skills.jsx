@@ -24,7 +24,7 @@ const smSkillsArr = [
   "Github",
   "ES6",
   "SCSS",
-  "Styled components"
+  "Styled components",
 ];
 
 export const rightSideVariants = {
@@ -70,7 +70,7 @@ function Skills() {
   return (
     <div className="skills" ref={ref}>
       <div className="progress">
-        <h1>Skills</h1>
+        <h1>My Tech Stack</h1>
         <div className="progressBar"></div>
       </div>
 

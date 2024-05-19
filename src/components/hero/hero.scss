@@ -2,7 +2,7 @@
 
 .hero {
   height: calc(100vh - 100px);
-  // overflow: hidden;
+  overflow: hidden;
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
   padding-inline: 4rem;
@@ -14,6 +14,9 @@
     max-width: 1366px;
     height: 100%;
     margin: auto;
+    @include mobile {
+      height: auto;
+    }
 
     .textContainer {
       width: 50%;
@@ -23,12 +26,16 @@
       justify-content: center;
       gap: 20px;
       padding-left: 10%;
+      flex-wrap: wrap;
+      z-index: 20;
 
       @include mobile {
-        height: 50%;
+        height: fit-content;
         width: 100%;
         gap: 30px;
         align-items: center;
+        justify-content: flex-start;
+        margin-top: 75px;
         text-align: center;
         padding-left: 0;
       }
@@ -41,6 +48,11 @@
         color: rebeccapurple;
         letter-spacing: 10px;
       }
+      h3 {
+        font-size: 24px;
+        letter-spacing: 1px;
+        margin: auto;
+      }
 
       h1 {
         font-size: 65px;
@@ -51,6 +63,7 @@
       }
 
       .buttons {
+        margin-top: 15px;
         a {
           padding: 20px;
           border: 1px solid white;
@@ -60,7 +73,7 @@
           margin-right: 20px;
           font-weight: 300;
           cursor: pointer;
-          z-index: 5;
+          z-index: 50;
 
           &:hover {
             background-color: orange;
@@ -70,15 +83,17 @@
 
       img {
         width: 50px;
+        margin-top: 10px;
       }
     }
   }
 
   .imageContainer {
-    height: 100%;
+    height: 80%;
     position: absolute;
-    top: 0;
-    right: 10%;
+    top: 30px;
+    right: 15%;
+    width: 30%;
 
     @include mobile {
       height: 50%;
@@ -90,15 +105,18 @@
       // max-width: 250px;
       padding-left: 30px;
       padding-right: 50px;
+      display: none;
     }
     @include tablet {
-      right: 0;
+      right: 5%;
+      width: 40%;
     }
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: 20px;
     }
   }
 
@@ -110,5 +128,9 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+
+    @include mobile {
+      bottom: -80px;
+    }
   }
 }
