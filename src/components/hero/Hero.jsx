@@ -32,7 +32,7 @@ const sliderVariants = {
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
-      duration: 10,
+      duration: 5,
     },
   },
 };
@@ -52,7 +52,7 @@ const Hero = () => {
           <div>
             <h3>
               Transforming Concepts into Seamless &nbsp;
-              <span>User Experiences</span>
+              <span>User Experiences.</span>
             </h3>
           </div>
           <motion.div variants={textVariants} className="buttons">
