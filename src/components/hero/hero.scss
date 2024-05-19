@@ -134,7 +134,8 @@
     font-weight: bold;
 
     @include mobile {
-      bottom: -80px;
+      bottom: -50px;
+      font-size: 35vh;
     }
   }
 }
