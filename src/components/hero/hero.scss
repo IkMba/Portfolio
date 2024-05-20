@@ -51,7 +51,11 @@
       h3 {
         font-size: 22px;
         // letter-spacing: 1px;
-        margin: auto;
+        width: 80%;
+
+        @include mobile {
+          margin: auto;
+        }
 
         span {
           color: rebeccapurple;
